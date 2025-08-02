@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*comentarios*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.montserrat-custom {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.dancing-script-custom {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: light;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header {
+    display: inline-flex;
+    background-color: #2e1f27;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.icono {
+    width: 40px;
+    height: 40px; 
+    margin-right: 20px; /* Espacio entre el icono y el texto */
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+  align-items: flex-end; /* Alinear elementos a la derecha del contenedor */
+}
+.menu a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+.menu a:hover {
+  color: #a8741a; /* Cambia el color al pasar el mouse */
+}
+#naming-negocio {
+    font-family: "dancing script", cursive;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+    margin-right: 200px; /* Espacio entre naming y menú */
+}
+#logo {
+    width: 100px; 
+    height: 100px;
+    margin-right: 20px; /* Espacio entre el logo y el menú */
+}
+p{
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px;
+}
+h1{
+    color: #815355;
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
+}
+h2{
+    color: #a48060;
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+    font-size: 24px;
+    margin: 10px;
+    text-align: center;
+    padding: 30px;
+}
+h3{
+    color: #2e1f27;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    text-align: left;
+    padding: 30px;
+}
+h4{
+    color: #2e1f27;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin: 10px;
+    text-align: left;
+    padding: 0px;
+}
+h5{
+    color: #a48060;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin: 10px;
+    text-align: left;
+    padding: 0px;
+}
+h6{
+    color: #898579;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    text-align: left;
+    padding-top: 30px;
+}
+
+body{
+    background-color: #f5f1f1;
+    margin: 0;
+    padding: 0;
+}
+main {
+    padding: 20px;
+}
+section {
+    padding: 10px;
+    margin: 20px;
+    background-color: #f5f1f1; 
+}
+.linea {
+  height: 1.5px;
+  background-color: #e4ddbe;
+  margin: 10px 0;
+  width: 100%;
+}
+.footer-info h3 {
+    color: #000000; /* Color del h3 footer */
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+    background-color: #e7e5e1; /* Color de fondo del footer */
+    text-decoration: none;
+    text-align: center;
+    color: #000000; /* Color del texto del footer */
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #000000; /* Color de los enlaces del footer */
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: #a8741a;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-logo {
+    width: 70px; 
+    height: 70px; 
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Por si el espacio se reduce en móvil */
+  gap: 20px;
+  margin-top: 30px;
+  padding: 10px 0;
+  font-size: 14px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+.footer-social p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.footer-social li {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+.icon-social {
+    width: 30px;
+    height: 30px;
+}
+/* Estilos para el carrusel index */
+.carrusel {
+    padding: 0;
+    margin: 0;
+    background-color: #f5f1f1; 
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+.carrusel img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* redondeado */
+}
+
+.descuentos {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 0;
+  flex-wrap: wrap; /* Permite que se acomoden en pantallas pequeñas */
+}
+
+.descuentos .item {
+  flex: 1 1 20%; /* columnas */
+  text-align: left;
+}
+
+.descuentos img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.descuentos p {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-size: 16px;
+}
+/* Estilo del menú categorías de ropa */
+.categorías-de-ropa {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 2.5; /* espacio entre líneas */
+    }
+
+    .categorías-de-ropa ul {
+      margin: 0 10px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .categorías-de-ropa li {
+      display: inline;
+      margin-right: 10px;
+      text-decoration: none;
+      color: #2e1f27;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+    }
+
+    .categorías-de-ropa a {
+      text-decoration: none;
+      color: #2e1f27;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+    }
+
+    .categorías-de-ropa a:hover {
+      color: #a8741a;
+      text-decoration: underline;
+    }
+/* Estilo de la sección de productos */
+.listado-ropa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px 10px;
+}
+
+.listado-ropa .item {
+    flex: 1 1 22%; /* 4 columnas */
+    max-width: 22%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.listado-ropa img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.listado-ropa p {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+/* Estilo de la sección imagen-texto (Historia) */
+.imagen-texto {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+}
+
+.imagen-texto img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px; /* bordes redondeados */
+}
+
+.imagen-texto iframe {
+  width: 25%;
+  height: 300px;
+  border: none; /* Sin borde */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.contenido-imagen-texto {
+  flex: 1;
+}
+
+.contenido-imagen-texto p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+/* Estilo de la sección imagen-texto (Pedidos) */
+.pedidos {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+}
+
+.pedidos img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px; /* bordes redondeados */
+}
+.pedidos a {
+  text-decoration: none;
+}
+
+.contenido-pedidos {
+  flex: 1;
+}
+
+.contenido-pedidos p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
