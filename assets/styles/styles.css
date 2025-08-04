@@ -253,8 +253,8 @@ main img {
 
 .banner-app img {
   display: block;       
-  max-width: 100%; 
-  width: auto;  
+  max-width: 600px; 
+  width:100%;  
   height: auto;
   margin-top: 20px;
   border-radius: 10px;
