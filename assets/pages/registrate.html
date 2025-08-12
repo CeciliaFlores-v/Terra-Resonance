@@ -13,7 +13,13 @@
         <a href="../../index.html">
             <img src="../img/terra_resonance.png" alt="Logo Terra Resonance" title="Logo de Terra Resonance" id="logo"></a>
         <div id="naming-negocio">Terra Resonance</div>
+           <form class="buscador" role="search" action="#" method="get">
+                <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar" />
+                <button type="submit">🔍</button>
+            </form>
         <nav class="menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon" aria-hidden="true">☰</label>
             <ul>
                 <li><a href="./ropa.html">Ropa</a></li>
                 <li><a href="./quienes-somos.html">¿Quiénes somos?</a></li>
@@ -25,6 +31,7 @@
         </nav>
     </header>
 <!-- Contenido -->
+ <main>
 <section class="registro-seccion">
   <div class="registro-container">
     <h2>Regístrate</h2>
@@ -122,7 +129,18 @@
     </form>
   </div>
 </section>
-
+<div class="inicia-sesion"> 
+  <p>¿Ya tienes cuenta? Inicia sesión </p>
+    <button class="btn-icon" type="submit">
+      <img src="../img/apple-boton-sesion-icon.png" alt="boton-icono">
+      <p>Continuar con Apple</p>
+    </button>
+      <button class="btn-icon" type="submit">
+      <img src="../img/facebook-boton-sesion-icon.png" alt="boton-icono">
+      <p>Continuar con Facebook</p>
+    </button>
+</div>
+</main>
 <footer>
     <div class="footer-container">
         <!-- Columna 1 -->

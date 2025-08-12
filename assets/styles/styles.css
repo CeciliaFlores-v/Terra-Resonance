@@ -62,9 +62,14 @@ header {
   padding: 20px;
   background-color: #2e1f27;
   color: #ffffff;
+  position: relative;
 }
 header > * {
   min-width: 0; 
+}
+.menu { 
+  margin-left: auto; 
+  position: relative; 
 }
 
 .menu ul {
@@ -73,9 +78,7 @@ header > * {
   list-style: none;
   margin: 0;
   padding: 0;
-  align-items: center;
-  /*align-items: flex-end; /* Alinear elementos a la derecha del contenedor */
-}
+  align-items: center;}
 .menu a {
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
@@ -85,6 +88,19 @@ header > * {
 .menu a:hover {
   color: #a8741a; /* Cambia el color al pasar el mouse */
 }
+.menu-toggle {
+  display: none;
+  position: absolute; 
+  left: -9999px;
+}
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  user-select: none; 
+}
+
 #naming-negocio {
   font-family: "Dancing Script", cursive;
   color: #ffffff;
@@ -94,6 +110,38 @@ header > * {
   margin-right: 0; 
   text-align: left;
   min-width: 0;
+}
+.buscador {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin: 20px 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  border: 2px solid #2e1f27;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: white;
+}
+.buscador input[type="search"] {
+  flex: 1;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+  outline: none;
+}
+.buscador button {
+  background-color: #2e1f27;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+.buscador button:hover {
+  background-color: #a8741a;
 }
 
 #logo {
@@ -173,7 +221,7 @@ main a:visited {
 main img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .linea {
@@ -188,14 +236,14 @@ main img {
     padding: 0;
     margin: 0;
     background-color: #f5f1f1; 
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 .carrusel img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px; /* redondeado */
+  border-radius: 8px; /* redondeado */
 }
 
 .descuentos {
@@ -211,14 +259,14 @@ main img {
 }
 .imagen-wrapper {
   position: relative;
-  border-radius: 10px;
-  overflow: hidden; 
+  border-radius: 8px;
+  overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .descuentos img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .white-box {
@@ -239,11 +287,12 @@ main img {
   font-family: 'Montserrat', sans-serif;
   color: #000000;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   text-align: left;
   white-space: normal;
   line-height: 1.2;
 }
+
 .banner-app {
   display: flex;
   justify-content: center; /* centra la imagen horizontalmente */
@@ -257,7 +306,7 @@ main img {
   width:100%;  
   height: auto;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 /* footer estilos*/
@@ -396,16 +445,41 @@ grid-column: span 1; /* Solo ocupa 1 columna */
   main {
     padding-top: 10px;
   }
+  .descuentos p {
+    font-size: 22px;
+  }
+
 }
 @media (max-width: 767px) {
   /* Menú vertical en móvil */
+    header {
+    position: relative;
+    z-index: 1000;
+    }
   .menu ul {
+    display: none;
+    /* position: fixed; */
+    top: 80%;
+    left: 0;
+    right: 0;
     flex-direction: column;
     gap: 15px;
     align-items: flex-start;
     background: #2e1f27;
-    padding: 10px 0;
+    padding: 10px 20px;
     width: 100%;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+  .menu-icon {
+    display: block;
+    color: #fff; 
+    margin-left: auto;
+    align-self: center;
+    cursor: pointer; 
+  }
+   .menu-toggle:checked ~ ul {
+    display: flex;
   }
 
   #logo {
@@ -414,15 +488,30 @@ grid-column: span 1; /* Solo ocupa 1 columna */
 
   #naming-negocio {
     font-size: 24px;
-    flex: 1 1 100%;
+    flex: 1;
+  }
+    .buscador {
+    max-width: 150px; /* más pequeño en móvil */
+  }
+
+  .buscador input[type="search"] {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .buscador button {
+    padding: 6px 10px;
+    font-size: 1rem;
+  }
+  .descuentos p {
+    font-size: 10px;
   }
   body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: auto;
-  overflow-x: hidden; /* evita scroll horizontal */
-    }
+}
   .main {
     display: grid;
     grid-template-areas: 
@@ -432,7 +521,6 @@ grid-column: span 1; /* Solo ocupa 1 columna */
     grid-template-columns: 1fr;
     gap: 0.5rem;
     }
-
 .imagen-wrapper img {
   display: block;
   width: 100%;
@@ -444,26 +532,19 @@ grid-column: span 1; /* Solo ocupa 1 columna */
     right: 8px;
     padding: 6px 10px;
   }
-.descuentos p {
-    font-size: 10px;
-  }
-
   footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
     gap: 1rem;
   }
-
   .footer-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-
   .footer-col {
     grid-column: span 1;
   }
-
   .footer-social {
     display: flex;
     flex-direction: row;
@@ -472,7 +553,6 @@ grid-column: span 1; /* Solo ocupa 1 columna */
     flex-wrap: wrap; /* que se ajusten si no caben */
     width: 100%; /* aseguramos que no se desborde */
   }
-
   .footer-social nav {
     display: flex;
     flex-direction: row;
@@ -482,7 +562,6 @@ grid-column: span 1; /* Solo ocupa 1 columna */
     gap: 10px;
   }
 }
-
 /* Estilo del menú categorías de ropa */
 .categorias-de-ropa {
       text-align: center;
@@ -554,7 +633,7 @@ grid-column: span 1; /* Solo ocupa 1 columna */
 .item__imagen {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -810,7 +889,40 @@ color: #a8741a;
   text-align: center;
   margin-top: 10px;
 }
+.inicia-sesion {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  margin-bottom: 20px;             
+  align-items: center;     
+  text-align: center;     
+}
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;   /* espacio entre imagen y texto */
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #2e1f27;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
 
+.btn-icon:hover {
+  background-color: #a8741a;
+}
+.btn-icon p{
+  color: white;
+}
+.btn-icon img {
+  width: 50px;  
+  height: auto;
+  object-fit: contain;
+}
 /*  móviles */
 @media (max-width: 768px) {
   .fila-doble {
