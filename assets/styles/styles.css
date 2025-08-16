@@ -307,8 +307,15 @@ main img {
 .banner-app {
   display: flex;
   justify-content: center; /* centra la imagen horizontalmente */
-  padding: 20px 0; /* opcional: espacio arriba/abajo */
+  padding: 20px 0; /* espacio arriba/abajo */
   width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: visible; 
+}
+.banner-app a {
+  display: inline-block;
+  border-radius: 8px;
 }
 
 .banner-app img {
@@ -319,7 +326,12 @@ main img {
   margin-top: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; /* transición suave */
 }
+.banner-app a:hover img{
+  transform: scale(1.2); /* agranda 10% al pasar el cursor */
+}
+
 /* footer estilos*/
 footer {
   display: grid;
