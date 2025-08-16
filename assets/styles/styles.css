@@ -190,8 +190,9 @@ h3{
 }
 h4{
     color: #2e1f27;
+    font-style: bold;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px;
     text-align: left;
     padding: 0px;
@@ -230,7 +231,14 @@ main img {
   margin: 10px 0;
   width: 100%;
 }
-
+.whatsapp {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 80px;
+  height: auto;
+  z-index: 1000;
+}
 /* index */
 .carrusel {
     padding: 0;
@@ -490,7 +498,7 @@ grid-column: span 1; /* Solo ocupa 1 columna */
     font-size: 24px;
     flex: 1;
   }
-    .buscador {
+  .buscador {
     max-width: 150px; /* más pequeño en móvil */
   }
 
@@ -521,6 +529,9 @@ grid-column: span 1; /* Solo ocupa 1 columna */
     grid-template-columns: 1fr;
     gap: 0.5rem;
     }
+  h3 {
+    text-align: center;
+  }
 .imagen-wrapper img {
   display: block;
   width: 100%;
@@ -532,7 +543,7 @@ grid-column: span 1; /* Solo ocupa 1 columna */
     right: 8px;
     padding: 6px 10px;
   }
-  footer {
+footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
     gap: 1rem;
@@ -561,6 +572,14 @@ grid-column: span 1; /* Solo ocupa 1 columna */
     flex-wrap: wrap;
     gap: 10px;
   }
+  .whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 60px;
+  height: auto;
+  z-index: 1000;
+}
 }
 /* Estilo del menú categorías de ropa */
 .categorias-de-ropa {
@@ -704,20 +723,27 @@ grid-column: span 1; /* Solo ocupa 1 columna */
 .imagen-texto {
   display: flex;
   align-items: flex-start;
-  gap: 40px;
-  padding: 40px;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
+.imagen-texto h4 {
+  margin-top: 25px;
+}
 .imagen-texto img {
   width: 300px;
   height: auto;
   border-radius: 10px; 
+  margin-top: 20px;
 }
 
 .imagen-texto iframe {
   width: 25%;
   height: 300px;
-  border: none; /* Sin borde */
+  border: none;
   border-radius: 10px; 
 }
 
@@ -730,6 +756,163 @@ grid-column: span 1; /* Solo ocupa 1 columna */
   line-height: 1.6;
   text-align: left;
 }
+.valores li {
+  margin-bottom: 10px; /* espacio entre cada bullet*/
+}
+.mision-columnas {
+  display: flex;
+  gap: 20px; 
+  justify-content: space-between;
+  flex-wrap: wrap; /* para móviles */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mision-columnas h4 {
+  width: 100%; 
+  text-align: center;
+}
+
+.Columna {
+  flex: 1 1 30%; 
+  min-width: 250px; 
+}
+
+.Columna h5 {
+  margin-bottom: 10px;
+}
+
+.valores {
+  list-style-type: disc;
+  margin: 0;
+}
+
+.valores li {
+  margin-bottom: 5px;
+}
+
+.nuestro-valor-diferencial {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.nuestro-valor-diferencial button {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Moviles Quienes somos */
+@media (max-width: 767px) {
+ main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  main p {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .mision-columnas h4 {
+    text-align: left;
+  }
+
+  .imagen-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .imagen-texto img,
+  .imagen-texto iframe {
+    width: 100%;
+    max-width: 500px; /* no exceder el ancho */
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .contenido-imagen-texto {
+    width: 100%;
+  }
+
+  .contenido-imagen-texto h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .mision-columnas {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .Columna {
+    flex: unset;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .Columna h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .Columna p,
+  .Columna ul {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .valores {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
+  .valores li {
+    margin-bottom: 5px;
+  }
+
+  /* Sección "Qué nos hace diferentes" */
+  .nuestro-valor-diferencial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nuestro-valor-diferencial h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .nuestro-valor-diferencial p {
+    margin-bottom: 15px;
+  }
+
+  .nuestro-valor-diferencial button {
+    margin-top: 20px;
+    width: auto;
+    padding: 10px 25px;
+  }
+
+}
+
 /* Estilo de la sección imagen-texto (Mis compras) */
 .pedidos {
   display: flex;
@@ -748,7 +931,7 @@ grid-column: span 1; /* Solo ocupa 1 columna */
 .pedidos img {
   width: 150px;
   height: auto;
-  border-radius: 10px; /* bordes redondeados */
+  border-radius: 8px; /* bordes redondeados */
 }
 .pedidos a {
   text-decoration: none;
@@ -766,6 +949,71 @@ color: #a8741a;
   line-height: 1.6;
   text-align: left;
 }
+
+.descuento-registro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.descuento-registro .contenido {
+  flex: 1; 
+}
+
+.descuento-registro img {
+  flex: 1.5;
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.descuento-registro p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e1f27;
+  margin: 0 0 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Moviles de Mis compras */
+@media (max-width: 589px) {
+  .pedidos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenido-pedidos {
+    margin-top: 15px; /* espacio entre imagen y texto */
+  }
+
+  .pedidos img {
+    width: 100%;
+    max-width: 300px;
+  }
+  .descuento-registro {
+    flex-direction: column; /* apila */
+    align-items: center;
+    text-align: center;
+  }
+  .descuento-registro .contenido {
+    flex: unset;
+    margin-bottom: 15px; /* espacio entre texto e imagen */
+  }
+
+  .descuento-registro p {
+    flex: unset;
+  }
+
+  .descuento-registro img {
+    flex: unset;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
 
 /* Estilo de Registro */
 .registro-seccion {
@@ -923,7 +1171,7 @@ color: #a8741a;
   height: auto;
   object-fit: contain;
 }
-/*  móviles */
+/*  móviles registro */
 @media (max-width: 768px) {
   .fila-doble {
     flex-direction: column;
