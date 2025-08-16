@@ -239,6 +239,9 @@ main img {
   height: auto;
   z-index: 1000;
 }
+.whatsapp img {
+  border: none;
+}
 /* index */
 .carrusel {
     padding: 0;
