@@ -256,18 +256,29 @@ main img {
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
 }
+
+.carrusel-container {
+  max-width: 1920px; /* ancho máximo */
+  margin: 0 auto 30px auto; 
+}
+
 .carrusel img {
   max-width: 100%;
   height: auto;
   display: block;
   border-radius: 8px; /* redondeado */
 }
-
+.titulo-h3 {
+  max-width: 1920px;
+  margin: 0 auto 30px auto; 
+}
 .descuentos {
+  max-width: 1920px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 auto 30px auto;  
 }
 .descuentos .item {
   flex: 1 1 20%; /* columnas */
