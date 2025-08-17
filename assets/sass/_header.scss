@@ -1,0 +1,103 @@
+@use "variables" as v;
+
+header {
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap; /* que baje en móviles */
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #2e1f27;
+  color: #ffffff;
+  position: relative;
+}
+header > * {
+  min-width: 0; 
+}
+.menu { 
+  margin-left: auto; 
+  position: relative; 
+}
+
+.menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;}
+.menu a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+.menu a:hover {
+  color: #a8741a; /* Cambia el color al pasar el mouse */
+}
+.menu-toggle {
+  display: none;
+  position: absolute; 
+  left: -9999px;
+}
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  user-select: none; 
+}
+
+#naming-negocio {
+  font-family: "Dancing Script", cursive;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 30px;
+  flex: 1 1 auto; 
+  margin-right: 0; 
+  text-align: left;
+  min-width: 0;
+}
+.buscador {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin: 20px 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  border: 2px solid #2e1f27;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: white;
+}
+.buscador input[type="search"] {
+  flex: 1;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+  outline: none;
+}
+.buscador button {
+  background-color: #2e1f27;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+.buscador button:hover {
+  background-color: #a8741a;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+.icono {
+  width: 40px;
+  height: 40px; 
+  margin-right: 20px; /* Espacio entre el icono y el texto */
+}

@@ -1,0 +1,105 @@
+
+@use "variables" as v;
+
+.home-carrusel { 
+    padding: 0;
+    margin: 0;
+    background-color: #f5f1f1; 
+    border-radius: 8px; /* Bordes redondeados */
+
+  .carrusel-container {
+  max-width: 1920px; /* ancho máximo */
+  margin: 0 auto 30px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */ 
+  }
+  .carrusel img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* redondeado */
+  }
+}
+.titulo-h3 {
+  max-width: 1920px;
+  margin: 0 auto 30px auto; 
+  }
+.descuentos {
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto 30px auto;  
+
+  .item {
+  flex: 1 1 20%; /* columnas */
+  text-align: left;
+  position: relative;
+  }
+
+  img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  white-space: normal;
+  line-height: 1.2;
+  }
+}
+  .imagen-wrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .white-box {
+  position: absolute;
+  bottom: 4px; /* ajusta verticalmente */
+  left: 10px;   /* margen desde la izquierda */
+  background: rgba(255, 255, 255, 0.8); /* blanco casi opaco */
+  padding: 8px 12px;
+  border-radius: 6px;
+  /* max-width: calc(100% - 20px); que no salga del ancho */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: inline-block;
+  overflow-wrap: break-word;
+  }
+
+.banner-app {
+  display: flex;
+  justify-content: center; /* centra la imagen horizontalmente */
+  padding: 20px 0; /* espacio arriba/abajo */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: visible; 
+  
+  a {
+  display: inline-block;
+  border-radius: 8px;
+  }
+
+  img {
+  display: block;       
+  max-width: 800px; 
+  width:100%;  
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; /* transición suave */
+  }
+  a:hover img{
+  transform: scale(1.2); /* agranda 10% al pasar el cursor */
+  }
+}

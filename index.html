@@ -3,170 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Terra Resonance - Home</title>
 </head>
 <body>
-    <!-- Menu -->
+    <!-- Header -->
     <header>
         <img src="./assets/img/terra_resonance.png" alt="Logo Terra Resonance" title="Logo de Terra Resonance" id="logo">
         <div id="naming-negocio">Terra Resonance</div>
-            <form class="buscador" role="search" action="#" method="get">
-                <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar" />
-                <button type="submit">🔍</button>
-            </form>
-        <nav class="menu">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon" aria-hidden="true">☰</label>
+
+        <form class="buscador" role="search" action="#" method="get">
+            <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar" />
+            <button type="submit">🔍</button>
+        </form>
+
+       <nav class="menu">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
             <ul>
                 <li><a href="./assets/pages/ropa.html">Ropa</a></li>
                 <li><a href="./assets/pages/quienes-somos.html">¿Quiénes somos?</a></li>
                 <li><a href="./assets/pages/registrate.html">Regístrate</a></li>
                 <li><a href="./assets/pages/mis_compras.html">Mis compras</a></li>
-                <li><a href="carrito.html">
-                <img src="./assets/img/icon_carrito.svg" class="icono" alt="Carrito" title="Carrito de compras"></a></li>
+                <li><a href="carrito.html"><img src="./assets/img/icon_carrito.svg" class="icono" alt="Carrito"></a></li>
             </ul>
         </nav>
     </header>
-<!-- Contenido -->
-<main>
-    <section>
 
-        <h2>Bienvenido a Terra Resonance</h2>
+    <!-- Main -->
+    <main>
+        <section class="home-carrusel">
+            <h2>Bienvenido a Terra Resonance</h2>
+            <div class="carrusel-container"> 
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/ofertas-verano.jpg" class="d-block w-100" alt="Ofertas de Verano">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/coleccion-amanecer-tropical-carrusel.jpg" class="d-block w-100" alt="Nueva colección">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/inspirate-con-looks.jpg" class="d-block w-100" alt="Inspírate con nuestros looks">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
 
-        <div class="carrusel-container"> 
-            <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <h3 class="titulo-h3">Aprovecha los mejores descuentos</h3>
+
+            <div class="descuentos">
+                <div class="item"><div class="imagen-wrapper"><img src="./assets/img/bermuda.jpg" alt="ropa 1"><div class="white-box"><p>30% en bermudas</p></div></div></div>
+                <div class="item"><div class="imagen-wrapper"><img src="./assets/img/chaqueta.jpg" alt="ropa 2"><div class="white-box"><p>20% en chaquetas</p></div></div></div>
+                <div class="item"><div class="imagen-wrapper"><img src="./assets/img/blusa.jpg" alt="ropa 3"><div class="white-box"><p>15% en blusas</p></div></div></div>
+                <div class="item"><div class="imagen-wrapper"><img src="./assets/img/saco.jpg" alt="ropa 4"><div class="white-box"><p>25% en sacos</p></div></div></div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="./assets/img/ofertas-verano.jpg" class="d-block w-100" alt="Ofertas de Verano">
-                </div>
-                <div class="carousel-item">
-                <img src="./assets/img/coleccion-amanecer-tropical-carrusel.jpg" class="d-block w-100" alt="Nueva colección">
-                </div>
-                <div class="carousel-item">
-                <img src="./assets/img/inspirate-con-looks.jpg" class="d-block w-100" alt="Inspírate con nuestros looks">
-                </div>
+
+            <div class="banner-app">
+                <a href="https://play.google.com/store/games?hl=es_MX&pli=1" target="_blank">
+                    <img src="./assets/img/descarga-app-tresonance-pocket-banner.jpg" alt="Descarga nuestra app">
+                </a>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col footer-info"><img class="footer-logo" src="./assets/img/terra_resonance.png" alt="Logo"><h3>Terra Resonance</h3></div>
+            <div class="footer-col"><ul><li><a href="./assets/pages/quienes-somos.html">¿Quiénes somos?</a></li><li><a href="sostenibilidad.html">Sostenibilidad</a></li><li><a href="soporte.html">Soporte al cliente</a></li><li><a href="ayuda.html">Ayuda</a></li></ul></div>
+            <div class="footer-col"><ul><li><a href="iniciar-sesion.html">Iniciar sesión</a></li><li><a href="./assets/pages/mis_compras.html">Mis Compras</a></li><li><a href="facturacion.html">Facturación</a></li><li><a href="devoluciones.html">Cambios y devoluciones</a></li></ul></div>
+            <div class="footer-col"><ul><li><a href="terminos.html">Términos y condiciones</a></li><li><a href="aviso.html">Aviso de privacidad</a></li><li><a href="garantia.html">Garantía Terra Resonance</a></li><li><a href="mapa-sitio.html">Mapa del sitio</a></li></ul></div>
         </div>
-<div class="titulo-h3"> 
-<h3>Aprovecha los mejores descuentos</h3>
-</div>
-        <div class="descuentos">
-            <div class="item">
-                <div class="imagen-wrapper">
-                <img src="./assets/img/bermuda.jpg" alt="ropa 1">
-                <div class="white-box">
-                <p>30% en bermudas</p>
-                </div>
-            </div>
-        </div>
-            <div class="item">
-                <div class="imagen-wrapper">
-                <img src="./assets/img/chaqueta.jpg" alt="ropa 2">
-                <div class="white-box">
-                <p>20% en chaquetas</p>
-                </div>
-            </div>
-        </div>
-            <div class="item">
-                <div class="imagen-wrapper">
-                <img src="./assets/img/blusa.jpg" alt="ropa 3">
-                <div class="white-box">
-                <p>15% en blusas</p>
-                </div>
-            </div>
-        </div>
-            <div class="item">
-                <div class="imagen-wrapper">
-                <img src="./assets/img/saco.jpg" alt="ropa 4">
-                <div class="white-box">
-                <p>25% en sacos</p>
-                </div>
-            </div>
-        </div>
-<div class="banner-app">
-  <a href="https://play.google.com/store/games?hl=es_MX&pli=1" target="_blank">
-    <img src="./assets/img/descarga-app-tresonance-pocket-banner.jpg" alt="Descarga nuestra app">
-  </a>
-</div>
-    
-</main>
-</section>
-<footer>
-    <div class="footer-container">
-        <!-- Columna 1 -->
-        <div class="footer-col footer-info">
-                <img class="footer-logo" src="./assets/img/terra_resonance.png" alt="Logo Terra Resonance">
-            <h3>Terra Resonance</h3>
-        </div>
-        
-        <!-- Columna 2 -->
-        <div class="footer-col"> 
-            <ul>
-                <li><a href="./assets/pages/quienes-somos.html"> ¿Quiénes somos?</a></li>
-                <li><a href="sostenibilidad.html"> Sostenibilidad</a></li>
-                <li><a href="soporte.html"> Soporte al cliente</a></li>
-                <li><a href="ayuda.html"> Ayuda</a></li>
+        <div class="footer-social">
+            <p>&copy; 2025 Terra Resonance. Todos los derechos reservados.</p>
+            <nav>
+                <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/terra_resonance_icon_Instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/terra_resonance_icon_facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.tiktok.com/es/" target="_blank"><img src="./assets/img/terra_resonance_icon_tiktok.png" alt="TikTok"></a></li>
             </ul>
-        </div>
-        
-        <!-- Columna 3 -->
-        <div class="footer-col">
-            <ul>
-                <li><a href="iniciar-sesion.html"> Iniciar sesión</a></li>
-                <li><a href="./assets/pages/mis_compras.html"> Mis Compras</a></li>
-                <li><a href="facturacion.html"> Facturación</a></li>
-                <li><a href="devoluciones.html"> Cambios y devoluciones</a></li>
-            </ul>
-        </div>
-        
-        <!-- Columna 4 -->
-        <div class="footer-col">
-            <ul>
-                <li><a href="terminos.html"> Términos y condiciones</a></li>
-                <li><a href="aviso.html"> Aviso de privacidad</a></li>
-                <li><a href="garantia.html"> Garantía Terra Resonance</a></li>
-                <li><a href="mapa-sitio.html"> Mapa del sitio </a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <!-- Redes sociales en la segunda fila -->
-    <div class="footer-social">
-        <p>&copy; 2025 Terra Resonance. Todos los derechos reservados.</p>
-        <nav>
-        <ul>
-        <li><a href="https://www.instagram.com/" target="_blank">
-            <img src="./assets/img/terra_resonance_icon_Instagram.png" class="icon-social" alt="logo Instagram Terra Resonance" title="Instagram Terra Resonance">
-        </a></li>
-        <li><a href="https://www.facebook.com/" target="_blank">
-            <img src="./assets/img/terra_resonance_icon_facebook.png" class="icon-social" alt="logo Facebook Terra Resonance" title="Facebook Terra Resonance">
-        </a></li>
-        <li><a href="https://www.tiktok.com/es/" target="_blank">
-            <img src="./assets/img/terra_resonance_icon_tiktok.png" class="icon-social" alt="logo TikTok Terra Resonance" title="TikTok Terra Resonance">
-        </a></li>
-        </ul>
         </nav>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<img src="assets/img/whatsapp.webp" alt="whatsapp" class="whatsapp">
+        </div>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/tu_numero" target="_blank">
+        <img src="assets/img/whatsapp.webp" alt="WhatsApp" class="whatsapp">
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

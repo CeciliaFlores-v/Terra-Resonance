@@ -1,0 +1,126 @@
+
+@use "variables" as v;
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas para el contenido */
+  grid-template-rows: auto auto; /* 2 filas */
+  gap: 40px;
+  padding: 40px 40px;
+  background-color: #e7e5e1;
+  text-align: left;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas en la primera fila */
+  gap: 20px;
+  grid-column: span 4; /* La primera fila ocupa las 4 columnas */
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer-info h3 {
+  color: #000000;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 5px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: #a8741a;
+}
+
+footer a:visited {
+  color: #a8741a;
+  text-decoration: none;
+}
+
+.footer-info {
+grid-column: span 1; /* Solo ocupa 1 columna */
+}
+
+.footer-col:nth-child(2) {
+  grid-column: span 1; /* Columna 2 */
+}
+
+.footer-col:nth-child(3) {
+  grid-column: span 1; /* Columna 3 */
+}
+
+.footer-col:nth-child(4) {
+  grid-column: span 1; /* Columna 4 */
+}
+
+.footer-social {
+  grid-column: 1 / 5; /* Ocupa las 4 columnas de la segunda fila */
+  grid-row: 2; /* Está en la segunda fila */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 5px;
+  flex-wrap: wrap; 
+}
+
+.footer-social nav {
+  display: flex;
+  flex-direction: row;  /* Aseguramos que los íconos estén en fila */
+  justify-content: center;  /* Alinea horizontalmente los íconos */
+}
+.footer-social ul {
+  display: flex;
+  gap: 20px; /* Espacio entre los íconos */
+  padding: 0;
+  margin: 0;
+}
+.footer-social li {
+  list-style: none;
+  text-align: center;
+}
+
+.icon-social {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-social a:hover {
+  color: #a8741a;
+}
