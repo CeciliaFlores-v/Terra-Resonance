@@ -101,7 +101,29 @@
     width: auto;
     padding: 10px 25px;
     }
+    .item {
+  &__boton {
+      display: inline-block;
+      padding: .75rem;
+      color: #ffffff;
+      font-weight: 500;
+      text-decoration: none;
+      text-align: center;
+      background-color: #815355;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      line-height: 1.2; 
+      white-space: nowrap;
+      transition: transform .15s ease;
+      align-self: start;
+
+        &:hover {
+        transform: scale(1.03);
+        }
+    }
   }
+}
 
 @media (max-width: 767px) {
  main {

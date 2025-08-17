@@ -641,6 +641,25 @@ footer a:visited {
   width: auto;
   padding: 10px 25px;
 }
+.nuestro-valor-diferencial .item__boton {
+  display: inline-block;
+  padding: 0.75rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  background-color: #815355;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition: transform 0.15s ease;
+  align-self: start;
+}
+.nuestro-valor-diferencial .item__boton:hover {
+  transform: scale(1.03);
+}
 
 @media (max-width: 767px) {
   main {
@@ -721,6 +740,28 @@ footer a:visited {
     margin-bottom: 5px;
   }
 }
+.registro-seccion {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.registro-container {
+  background: #ffffff;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+}
+.registro-container p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  color: #333;
+}
+
 .registro-form .campo {
   display: flex;
   flex-direction: column;
@@ -796,18 +837,45 @@ footer a:visited {
   text-align: center;
   margin-top: 10px;
 }
-.registro-form .inicia-sesion {
+.registro-form button {
+  margin-top: 20px;
+  width: auto;
+  padding: 10px 25px;
+}
+.registro-form .item__boton {
+  display: inline-block;
+  padding: 0.75rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  background-color: #815355;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition: transform 0.15s ease;
+  align-self: start;
+}
+.registro-form .item__boton:hover {
+  transform: scale(1.03);
+}
+
+.inicia-sesion {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-bottom: 20px;
   align-items: center;
+  gap: 15px;
+  margin-top: 20px;
   text-align: center;
 }
 
 .btn-icon {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 10px 16px;
   font-size: 16px;
@@ -824,6 +892,7 @@ footer a:visited {
 }
 .btn-icon p {
   color: white;
+  margin: 0;
 }
 .btn-icon img {
   width: 50px;
