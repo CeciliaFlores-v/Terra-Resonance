@@ -521,7 +521,6 @@ footer a:visited {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Moviles de Mis compras */
 @media (max-width: 589px) {
   .pedidos {
     flex-direction: column;

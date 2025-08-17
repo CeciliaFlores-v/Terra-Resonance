@@ -64,7 +64,7 @@
 }
 }
 
-/* Moviles de Mis compras */
+
 @media (max-width: 589px) {
   .pedidos {
     flex-direction: column;
@@ -84,20 +84,19 @@
     flex-direction: column; /* apila */
     align-items: center;
     text-align: center;
-    
-    .contenido {
+  }
+  .descuento-registro .contenido {
     flex: unset;
     margin-bottom: 15px; /* espacio entre texto e imagen */
   }
 
-    p {
+  .descuento-registro p {
     flex: unset;
   }
 
-    img {
+  .descuento-registro img {
     flex: unset;
     width: 100%;
     max-width: 500px;
   }
-}
 }
