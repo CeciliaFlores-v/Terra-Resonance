@@ -140,35 +140,5 @@ footer {
   height: auto;
   z-index: 1000;
 }
-  .listado-ropa {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .fila-doble {
-    flex-direction: column;
-  }
-  .grupo-radio .opciones-contacto {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .grupo-radio .opcion {
-    width: 50%;
-  }
-  .grupo-radio input[type="radio"] {
-    flex-shrink: 0;
-  }
-}
 
-@media (max-width: 1024px) {
-  .listado-ropa {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-
-@media (max-width: 480px) {
-  .listado-ropa {
-    grid-template-columns: 1fr;
-  }
 }

@@ -128,3 +128,21 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .listado-ropa {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .listado-ropa {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .listado-ropa {
+    grid-template-columns: 1fr;
+  }
+}
