@@ -105,11 +105,11 @@
   &__boton {
       display: inline-block;
       padding: .75rem;
-      color: #ffffff;
+      color: v.$ColorPrincipal;
       font-weight: 500;
       text-decoration: none;
       text-align: center;
-      background-color: #815355;
+      background-color: v.$ColorCafe;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -158,14 +158,14 @@
         width: 100%;
         max-width: 500px; /* no exceder el ancho */
         height: auto;
-        border-radius: 8px;
+        border-radius: v.$BorderRadius;
     }
     
     iframe {
         width: 100%;
         max-width: 500px; /* no exceder el ancho */
         height: auto;
-        border-radius: 8px;
+        border-radius: v.$BorderRadius;
     }
   }
 

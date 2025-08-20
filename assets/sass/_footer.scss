@@ -7,10 +7,10 @@ footer {
   grid-template-rows: auto auto; /* 2 filas */
   gap: 40px;
   padding: 40px 40px;
-  background-color: #e7e5e1;
+  background-color: v.$ColorPie;
   text-align: left;
-  color: #000000;
-  font-family: 'Montserrat', sans-serif;
+  color: v.$ColorSecundario;
+  font-family: v.$Fuente;
 }
 
 .footer-container {
@@ -27,8 +27,8 @@ footer {
 }
 
 .footer-info h3 {
-  color: #000000;
-  font-family: 'Dancing Script', cursive;
+  color: v.$ColorSecundario;
+  font-family: v.$FuenteTerra;
   font-size: 25px;
   font-weight: 400;
   margin: 0;
@@ -52,16 +52,16 @@ footer {
 
 .footer-col a {
   text-decoration: none;
-  color: #000000;
+  color: v.$ColorSecundario;
   font-size: 14px;
 }
 
 .footer-col a:hover {
-  color: #a8741a;
+  color: v.$ColorArena;
 }
 
 footer a:visited {
-  color: #a8741a;
+  color: v.$ColorArena;
   text-decoration: none;
 }
 
@@ -122,5 +122,5 @@ grid-column: span 1; /* Solo ocupa 1 columna */
 }
 
 .footer-social a:hover {
-  color: #a8741a;
+  color: v.$ColorArena;
 }

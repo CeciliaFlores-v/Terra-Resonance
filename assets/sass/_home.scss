@@ -4,19 +4,19 @@
 .home-carrusel { 
     padding: 0;
     margin: 0;
-    background-color: #f5f1f1; 
-    border-radius: 8px; /* Bordes redondeados */
+    background-color: v.$ColorFondo; 
+    border-radius: v.$BorderRadius; /* Bordes redondeados */
 
   .carrusel-container {
   max-width: 1920px; /* ancho máximo */
   margin: 0 auto 30px auto;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */ 
+  box-shadow: 0 2px 5px v.$Sombras; /* Sombra */ 
   }
   .carrusel img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px; /* redondeado */
+  border-radius: v.$BorderRadius; /* redondeado */
   }
 }
 .titulo-h3 {
@@ -40,14 +40,14 @@
   img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: v.$BorderRadius;
+  box-shadow: 0 2px 5px v.$Sombras;
   }
 
   p {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: #000000;
+  font-family: v.$Fuente;
+  color: v.$ColorSecundario;
   font-weight: 500;
   font-size: 20px;
   text-align: left;
@@ -59,18 +59,18 @@
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px v.$Sombras;
   }
 
   .white-box {
   position: absolute;
   bottom: 4px; /* ajusta verticalmente */
   left: 10px;   /* margen desde la izquierda */
-  background: rgba(255, 255, 255, 0.8); /* blanco casi opaco */
+  background: v.$TransparenciaPrecios; 
   padding: 8px 12px;
   border-radius: 6px;
   /* max-width: calc(100% - 20px); que no salga del ancho */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px v.$SombrasBox;
   display: inline-block;
   overflow-wrap: break-word;
   }
@@ -81,12 +81,12 @@
   padding: 20px 0; /* espacio arriba/abajo */
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: v.$BorderRadius;
   overflow: visible; 
   
   a {
   display: inline-block;
-  border-radius: 8px;
+  border-radius: v.$BorderRadius;
   }
 
   img {
@@ -95,8 +95,8 @@
   width:100%;  
   height: auto;
   margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  border-radius: v.$BorderRadius;
+  box-shadow: 0 2px 5px v.$Sombras; 
   transition: transform 0.3s ease; /* transición suave */
   }
   a:hover img{
