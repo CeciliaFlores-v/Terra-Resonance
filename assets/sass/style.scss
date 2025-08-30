@@ -29,8 +29,8 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f5f1f1;
+  font-family: $Fuente;
+  background-color: $ColorFondo;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -55,13 +55,13 @@ main {
   grid-area: main;
   grid-row: 2;
   padding: 20px;
-  background-color: #f5f1f1;
+  background-color: $ColorFondo;
   width: 100%;
   box-sizing: border-box;
   border: none;
   
   a:visited {
-  color: #a8741a;
+  color: $ColorArena;
   text-decoration: none;
   }
 
@@ -79,16 +79,7 @@ main {
     font-weight: 300;
     margin: 10px;
   }
-  h1{
-    color: #815355;
-    font-family: 'Montserrat', sans-serif;
-    font-style: bold;
-    font-size: 30px;
-    font-weight: 700;
-    margin: 10px;
-    text-align: center;
-    }
-  h2{
+  h1 {
     color: #a48060;
     font-family: 'Montserrat', sans-serif;
     font-style: bold;
@@ -97,6 +88,17 @@ main {
     text-align: center;
     padding: 20px;
     }
+
+  h2{
+    color: #2e1f27;
+    font-style: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    text-align: left;
+    padding: 0px;
+    }
+
   h3{
     color: #2e1f27;
     font-family: 'Montserrat', sans-serif;
@@ -130,6 +132,16 @@ main {
     text-align: left;
     padding-top: 30px;
   }
+
+    h7{
+    color: #a48060;
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+    font-size: 24px;
+    margin: 0px;
+    text-align: center;
+    padding: 20px;
+    }
 
 .linea {
   height: 1.5px;
