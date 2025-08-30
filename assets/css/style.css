@@ -1156,7 +1156,7 @@ main p {
   margin: 10px;
 }
 main h1 {
-  color: #815355;
+  color: #a48060;
   font-family: "Montserrat", sans-serif;
   font-style: bold;
   font-size: 30px;
@@ -1165,13 +1165,13 @@ main h1 {
   text-align: center;
 }
 main h2 {
-  color: #a48060;
-  font-family: "Montserrat", sans-serif;
+  color: #2e1f27;
   font-style: bold;
-  font-size: 24px;
-  margin: 0px;
-  text-align: center;
-  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+  text-align: left;
+  padding: 0px;
 }
 main h3 {
   color: #2e1f27;

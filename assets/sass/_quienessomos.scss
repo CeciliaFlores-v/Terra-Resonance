@@ -8,6 +8,10 @@
   padding: 20px 0;
   margin: 20px 0;
 
+  h2 {
+    margin-top: 25px;
+  }
+
   h4 {
     margin-top: 25px;
   }
@@ -43,6 +47,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px 0;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
 
   h4 {
     width: 100%;
@@ -87,6 +96,10 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
     h4 {
       font-size: 20px;
       margin-bottom: 15px;
@@ -171,7 +184,7 @@
 
   .contenido-imagen-texto {
     width: 100%;
-     h4 {
+     h2 {
         font-size: 20px;
         margin-bottom: 10px;
     }
