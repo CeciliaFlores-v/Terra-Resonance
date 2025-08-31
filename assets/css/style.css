@@ -600,8 +600,8 @@ footer a:visited {
 
 .mision-columnas {
   display: flex;
-  gap: 20px;
-  justify-content: space-between;
+  gap: 30px;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 20px 0;
 }
